@@ -32,6 +32,9 @@ header nav a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.formulario-login{
+    height: 280px;
+}
 
 h1 {
     text-align: center;

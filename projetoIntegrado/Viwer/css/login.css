@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.formulario-cadastro,
+.formulario-login {
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-cadastro form,
+.formulario-login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-cadastro label,
+.formulario-login label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-cadastro input[type="text"],
+.formulario-login input[type="text"],
+.formulario-cadastro input[type="tel"],
+.formulario-cadastro input[type="password"],
+.formulario-login input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.sexo-options {
+    margin-bottom: 15px;
+}
+
+.formulario-cadastro input[type="submit"],
+.formulario-login input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-login {
+    margin-left: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

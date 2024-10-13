@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se / Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <a href="faleconosco.html">Fale Conosco</a>
+            <a href="login.html">Login / Cadastre-se</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Formulário de Cadastro -->
+        <div class="formulario-cadastro">
+            <h1>Cadastre-se</h1>
+            <form action="">
+                <label for="inNome">Nome: </label>
+                <input type="text" id="inNome" placeholder="Ex.: Joao Silva" required>
+
+                <label for="inEmail">Email: </label>
+                <input type="text" id="inEmail" placeholder="joao@gmail.com" required>
+
+                <label for="inTelefone">Telefone: </label>
+                <input type="tel" id="inTelefone" placeholder="Ex.: (61) 99999-9999" maxlength="11">
+
+                <label>Sexo:</label>
+                <div class="sexo-options">
+                    <input type="radio" name="sexo" id="inSexoMasc" value="masculino"> Masculino
+                    <input type="radio" name="sexo" id="inSexoFem" value="feminino"> Feminino
+                </div>
+
+                <label for="inSenha">Senha:</label>
+                <input type="password" id="inSenha" required>
+
+                <label for="inSenhaII">Confirme a senha:</label>
+                <input type="password" id="inSenhaII" required>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div class="formulario-login">
+            <h1>Login</h1>
+            <form action="">
+                <label for="loginEmail">Email: </label>
+                <input type="text" id="loginEmail" placeholder="Digite seu email" required>
+
+                <label for="loginSenha">Senha:</label>
+                <input type="password" id="loginSenha" placeholder="Digite sua senha" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Loja Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

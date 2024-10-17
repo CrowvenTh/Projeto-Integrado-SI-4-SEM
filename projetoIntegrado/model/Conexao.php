@@ -1,0 +1,16 @@
+<?php>
+
+    abstract class Conexao{
+        public static function getInstance(){
+            $dsn = 'musql:host=localhost;dbname=';
+            $user = 'root';
+            $pass = '';
+            try{
+                $pdo = new PDO($DSN, $user, $pass);
+                $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                return $pdo;
+            } catch (PDOException $exc){
+                echo $exc -> getMessage();
+            }
+        }
+    }
